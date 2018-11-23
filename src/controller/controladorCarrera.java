@@ -30,7 +30,7 @@ public class controladorCarrera {
         modeloCarrera carrera1 = new modeloCarrera();
         return carrera1.borrarCarrera(clave);
     }
-
+    /*
     public static void main(String[] args){
 
         controladorCarrera cc = new controladorCarrera();
@@ -48,9 +48,12 @@ public class controladorCarrera {
             System.out.println();
         }
 
+        //Modificar un elemento
+        //System.out.println(cc.actualizarCarrera(new Carrera("Biologia", "7", "Licenciatura", "LBIO-2010-220", "Licenciatura en Biología", "LBIO", 36, 300, "1", "Escolarizada")));
+
         //Listar un elemento de la tabla por su llave primaria
         ArrayList<Carrera> carrera = new ArrayList<Carrera>();
-        carrera = cc.obtenerCarrera("IINF-2010-220");
+        carrera = cc.obtenerCarrera("LBIO-2010-220");
 
         for (int b=0;b<carrera.size();b++){
             System.out.println("Carrera: " + carrera.get(b).getCarrera());
@@ -60,11 +63,9 @@ public class controladorCarrera {
             System.out.println();
         }
 
-        //Modificar un elemento
-        System.out.println(cc.actualizarCarrera(new Carrera("Biologia", "7", "Licenciatura", "LBIO-2010-220", "Licenciatura en Biología", "LBIO", 32, 260, "1", "Escolarizada")));
-
-        //Modificar un elemento
+        //Eliminar un elemento
         System.out.println(cc.eliminarCarrera("LBIO-2010-220"));
     }
+    */
 
 }

@@ -1,16 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: l3onet
-  Date: 11/3/18
-  Time: 10:17 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
-</html>
+<jsp:include page='views/header.jsp'></jsp:include>
+
+<div class="container">
+  <h1 class="header center orange-text"><img src="images/avatar-7.png" class="responsive-img"></h1>
+  <div class="row center">
+    <p>Proyecto Sistema Academico</p>
+  </div>
+</div>
+<jsp:include page='views/footer.jsp'></jsp:include>
