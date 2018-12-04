@@ -144,7 +144,8 @@
 
             </div>
             <div class="input-field col s8">
-                <input type="submit" value="Insertar" onclick='return(verif(this.form)); MM_validateForm()' class="btn col s12">
+                <input type="submit" value="Insertar" onclick='return(verif(this.form)); MM_validateForm()' class="btn col s6">
+                <a class="btn col s6" href="carreras.jsp">Regresar</a>
             </div>
             <div class="col s2">
 

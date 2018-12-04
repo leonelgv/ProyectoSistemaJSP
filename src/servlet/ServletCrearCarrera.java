@@ -37,7 +37,7 @@ public class ServletCrearCarrera extends HttpServlet {
 
         controladorCarrera cc = new controladorCarrera();
         if(cc.agregarCarrera(nuevaCarrera)) {
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("carreras.jsp");
         } else {
             response.sendRedirect("a_carrera.jsp");
         }

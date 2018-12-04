@@ -4,7 +4,7 @@
             <div class="nav-wrapper">
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.jsp"><i class="material-icons left">home</i>Inicio</a></li>
-                    <li><a href="a_carrera.jsp"><i class="material-icons left">home</i>Carreras</a></li>
+                    <li><a href="carreras.jsp"><i class="material-icons left">book</i>Carreras</a></li>
 
                     <li><a href="acercade.jsp"><i class="material-icons left">help</i>Acerca de</a></li>
                     <li>
