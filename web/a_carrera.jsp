@@ -1,4 +1,24 @@
+<%@ page import="controller.controladorCarrera" %>
+<%@ page import="include.Carrera" %>
+<%@ page import="java.util.ArrayList" %>
 <jsp:include page='views/header.jsp'></jsp:include>
+
+<%
+    controladorCarrera cc = new controladorCarrera();
+    ArrayList<Carrera> carreras = new ArrayList<Carrera>();
+    carreras = cc.obtenerCarrerasFK();
+
+
+    String htmlselect = "";
+    htmlselect += "<select name=\"carrerasfk\">\n" +
+            "                <option value=\"\" selected disabled>Elige la carrera" +
+            "</option>\n";
+    for(int a=0; a<carreras.size();a++){
+        htmlselect += "<option value=\""+carreras.get(a).getClave_oficial()+"\">"+carreras.get(a).getNombre_carrera()+"</option>\n";
+    }
+    htmlselect += "            </select>";
+
+%>
 
 <div class="container">
     <form class="col s12" action="/crearCarrera" method="post">
@@ -133,7 +153,9 @@
 
             </div>
             <div class="input-field col s8">
-
+                <%
+                    out.print(htmlselect);
+                %>
             </div>
             <div class="col s2">
 

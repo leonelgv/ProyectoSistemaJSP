@@ -83,6 +83,33 @@ public class modeloCarrera extends conexion {
         return carreras;
     }
 
+    public ArrayList<Carrera> obtenerCarrerasFK(){
+        ArrayList<Carrera> carreras = new ArrayList<Carrera>();
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        try {
+            String consulta = "SELECT CLAVE_OFICIAL, NOMBRE_CARRERA FROM CARRERA ";
+            pst = getConection().prepareCall(consulta);
+            rs = pst.executeQuery();
+            while (rs.next()){
+                carreras.add(new Carrera(
+                        rs.getString("CLAVE_OFICIAL"),
+                        rs.getString("NOMBRE_CARRERA")));
+            }
+        } catch (Exception e) {
+
+        }finally {
+            try {
+                if(getConection() != null)getConection().close();
+                if(pst != null)pst.close();
+                if(rs !=null)rs.close();
+            } catch (Exception e) {
+
+            }
+        }
+        return carreras;
+    }
+
     public ArrayList<Carrera> obtenerCarrera(String clave){
         ArrayList<Carrera> carrera = new ArrayList<Carrera>();
         PreparedStatement pst = null;

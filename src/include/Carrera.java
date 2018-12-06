@@ -12,6 +12,11 @@ public class Carrera {
     private String nivel;
     private String modalidad;
 
+    public Carrera(String clave_oficial, String nombre_carrera) {
+        this.clave_oficial = clave_oficial;
+        this.nombre_carrera = nombre_carrera;
+    }
+
     public Carrera(String carrera, String reticula, String nivel_escolar, String clave_oficial, String nombre_carrera, String nombre_reducido, int carga_maxima, int creditos_totales, String nivel, String modalidad) {
         this.carrera = carrera;
         this.reticula = reticula;

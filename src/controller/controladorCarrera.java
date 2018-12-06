@@ -17,6 +17,11 @@ public class controladorCarrera {
         return carrera.obtenerCarreras();
     }
 
+    public ArrayList<Carrera> obtenerCarrerasFK(){
+        modeloCarrera carrera = new modeloCarrera();
+        return carrera.obtenerCarrerasFK();
+    }
+
     public ArrayList<Carrera> obtenerCarrera(String clave){
         modeloCarrera carrera = new modeloCarrera();
         return carrera.obtenerCarrera(clave);
