@@ -16,6 +16,17 @@
     <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="js/alertas.js"></script>
+    <script>
+        function delete_carrera(id_to_delete)
+        {
+            var confirmation = confirm(String.fromCharCode(191)+'Est\u00E1 seguro de que desea eliminar la carrera con clave '+ id_to_delete);
+
+            if(confirmation)
+            {
+                window.location = "borrar_carrera.jsp?claveoficial="+id_to_delete;
+            }
+        }
+    </script>
 </head>
 <body>
 <!--Import jQuery before materialize.js-->

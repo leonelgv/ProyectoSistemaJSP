@@ -50,9 +50,10 @@
                                     + "</td><td>" + carreras.get(a).getCreditos_totales()
                                     + "</td><td>" + carreras.get(a).getNivel()
                                     + "</td><td>" + carreras.get(a).getModalidad()
-                                    + "</td><td><a class=\"btn\" href=\"#\"><i class=\"material-icons\">zoom_in</i></a>"
+                                    + "</td><td>" +
+                                    "<a class=\"btn\" href=\"#\"><i class=\"material-icons\">zoom_in</i></a>"
                                     + "<a class=\"btn blue\" href=\"m_carrera.jsp?claveoficial="+carreras.get(a).getClave_oficial()+"\"><i class=\"material-icons\">create</i></a>"
-                                    + "<a class=\"btn red\" href=\"#\"><i class=\"material-icons\">delete</i></a>"
+                                    + "<a class=\"btn red\" onclick=\"delete_carrera('"+ carreras.get(a).getClave_oficial()+"')\"><i class=\"material-icons\">delete</i></a>"
                                     + "</td></tr>";
                         }
                     } else{
